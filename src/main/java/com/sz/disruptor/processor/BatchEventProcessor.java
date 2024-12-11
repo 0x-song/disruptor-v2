@@ -43,4 +43,8 @@ public class BatchEventProcessor<T> implements Runnable{
             System.out.println("更新消费者序列:" + availableConsumerSequence);
         }
     }
+
+    public Sequence getCurrentConsumerSequence() {
+        return currentConsumerSequence;
+    }
 }
